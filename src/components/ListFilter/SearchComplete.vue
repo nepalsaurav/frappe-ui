@@ -52,18 +52,7 @@ watch(
   },
 )
 
-const r = createListResource({
-  doctype: props.doctype,
-  pageLength: props.pageLength,
-  cache: ['link_doctype', props.doctype],
-  auto: true,
-  fields: [props.labelField, props.searchField, props.valueField],
-  onSuccess: () => {
-    selection.value = props.value
-      ? options.value.find((o) => o.value === props.value)
-      : null
-  },
-})
+
 const options = computed(
   () =>
     r.data?.map((result) => ({

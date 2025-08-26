@@ -75,7 +75,6 @@ declare module 'vue' {
     FormControl: typeof import('./src/components/FormControl/FormControl.vue')['default']
     'FormControl.story': typeof import('./src/components/FormControl/FormControl.story.vue')['default']
     FormLabel: typeof import('./src/components/FormLabel.vue')['default']
-    FrappeUIProvider: typeof import('./src/components/Provider/FrappeUIProvider.vue')['default']
     FunnelChart: typeof import('./src/components/Charts/FunnelChart.vue')['default']
     GreenCheckIcon: typeof import('./src/components/GreenCheckIcon.vue')['default']
     H1: typeof import('./src/components/TextEditor/icons/h-1.vue')['default']
